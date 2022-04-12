@@ -2,18 +2,21 @@
     <div>
         <div ref="blocklyWarp" class="blocklyEditorWrapper"/>
         <LoadingDialog></LoadingDialog>
+        <BlocklyDialog></BlocklyDialog>
     </div>
 </template>
 <script>
 import LoadingDialog from '~/components/LoadingDialog.vue'
 import toolbarXML from '~/plugins/blockly/toolbar.js'
+import BlocklyDialog from '~/components/BlocklyDialog.vue'
 
 import Blockly from 'blockly'
 
 export default {
     name:"editor",
     components:{
-        LoadingDialog
+        LoadingDialog,
+        BlocklyDialog
     },
     methods:{
         onLoad(){

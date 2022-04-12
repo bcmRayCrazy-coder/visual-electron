@@ -205,7 +205,7 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
 <block type="text_length">
   <value name="VALUE">
     <shadow type="text">
-      <field name="TEXT">Alan_Best</field>
+      <field name="TEXT">ray</field>
     </shadow>
   </value>
 </block>
@@ -225,7 +225,7 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
   </value>
   <value name="FIND">
     <shadow type="text">
-      <field name="TEXT">Alan_Best</field>
+      <field name="TEXT">ray</field>
     </shadow>
   </value>
 </block>
@@ -252,7 +252,7 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
   <field name="CASE">UPPERCASE</field>
   <value name="TEXT">
     <shadow type="text">
-      <field name="TEXT">Alan_Best</field>
+      <field name="TEXT">ray</field>
     </shadow>
   </value>
 </block>
@@ -260,7 +260,7 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
   <field name="MODE">BOTH</field>
   <value name="TEXT">
     <shadow type="text">
-      <field name="TEXT">Alan_Best</field>
+      <field name="TEXT">ray</field>
     </shadow>
   </value>
 </block>
