@@ -9,7 +9,8 @@
 		"generate": "nuxt generate",
 		"lint:prettier": "prettier --check .",
 		"lint": "yarn lint:prettier",
-		"lintfix": "prettier --write --list-different ."
+		"lintfix": "prettier --write --list-different .",
+		"autoDev": "yarn lintfix; yarn lint;yarn dev"
 	},
 	"dependencies": {
 		"@blockly/block-plus-minus": "^3.0.10",
