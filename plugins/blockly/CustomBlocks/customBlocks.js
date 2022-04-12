@@ -1,4 +1,5 @@
 import events from './Blocks/event.js'
+import windows from './Blocks/window.js'
 import { XMLBuilder } from 'fast-xml-parser'
 import Blockly from 'blockly'
 
@@ -36,5 +37,6 @@ function toXml(p) {
 }
 
 var addonXml = toXml(events)
+addonXml += toXml(windows)
 
 export default addonXml
