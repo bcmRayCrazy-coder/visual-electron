@@ -16,12 +16,13 @@ export default {
 							'height'
 						)
 					this.setStyle('window_block')
+					this.setOutput(true, 'Window')
 				},
 			},
 			code() {
 				let width = this.getFieldValue('width')
 				let height = this.getFieldValue('height')
-				return `new Window({
+				return ` new Window({
                     width:${width}, 
                     height:${height}
                 });\n`

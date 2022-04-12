@@ -1,5 +1,6 @@
 <template>
 	<v-app dark>
+		<headbar></headbar>
 		<v-main>
 			<v-container>
 				<Nuxt />
@@ -11,9 +12,10 @@
 
 <script>
 import footertip from '~/components/footertip.vue'
+import headbar from '~/components/headbar.vue'
 
 export default {
-	components: { footertip },
+	components: { footertip, headbar },
 	name: 'DefaultLayout',
 	data() {
 		return {}
