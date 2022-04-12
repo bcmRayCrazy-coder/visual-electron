@@ -1,5 +1,5 @@
-import setCustomDialog from './blockly/dialog.js';
-import setMsg from './blockly/msg.js';
+import setCustomDialog from './blockly/dialog.js'
+import setMsg from './blockly/msg.js'
 import './blockly/render.js'
 import './blockly/theme.js'
 
@@ -18,8 +18,8 @@ import './blockly/theme.js'
  * @description 初始化blockly
  */
 function blocklySetter() {
-    setCustomDialog();
-    setMsg();
+	setCustomDialog()
+	setMsg()
 }
 
-var bs = blocklySetter();
+var bs = blocklySetter()

@@ -1,39 +1,41 @@
-import { XMLBuilder } from 'fast-xml-parser';
-import addonXml from './CustomBlocks/customBlocks.js';
+import { XMLBuilder } from 'fast-xml-parser'
+import addonXml from './CustomBlocks/customBlocks.js'
 
-console.log(addonXml);
+console.log(addonXml)
 
 const builder = new XMLBuilder({
-    attributeNamePrefix: '@',
-    ignoreAttributes: false,
-    arrayNodeName: 'category',
-});
+	attributeNamePrefix: '@',
+	ignoreAttributes: false,
+	arrayNodeName: 'category',
+})
 const toolbarXML = builder.build({
-    // '@name': '列表',
-    'category': [{
-        '@name': '基本',
-        'block': [{
-                '@type': 'controls_if',
-                '@name': 'if',
-                '@id': 'if',
-                'mutation': {
-                    '@elseif': '0',
-                    '@else': 'false',
-                },
-            },
-            {
-                '@type': 'controls_if',
-                '@name': 'if',
-                '@id': 'if',
-                'mutation': {
-                    '@elseif': '0',
-                    '@else': 'false',
-                }
-            }
-        ],
-    }],
-
-});
+	// '@name': '列表',
+	category: [
+		{
+			'@name': '基本',
+			block: [
+				{
+					'@type': 'controls_if',
+					'@name': 'if',
+					'@id': 'if',
+					mutation: {
+						'@elseif': '0',
+						'@else': 'false',
+					},
+				},
+				{
+					'@type': 'controls_if',
+					'@name': 'if',
+					'@id': 'if',
+					mutation: {
+						'@elseif': '0',
+						'@else': 'false',
+					},
+				},
+			],
+		},
+	],
+})
 
 export default `<xml><category name="逻辑" colour="#68CDFF">
 <block type="controls_if"></block>
@@ -337,5 +339,5 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
 <category name="函数" colour="#5574F8" custom="PROCEDURE"></category>
 <sep></sep>
 ${addonXml}
-</xml>`;
+</xml>`
 // ${toolbarXML}
