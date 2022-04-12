@@ -20,20 +20,20 @@ jobs:
                 node: [14]
 
         steps:
-            - name: Checkout 🛎
+            - name: 检查 🛎
               uses: actions/checkout@master
 
-            - name: Setup node env 🏗
+            - name: 配置node环境 🏗
               uses: actions/setup-node@v2.1.5
               with:
                   node-version: ${{ matrix.node }}
                   check-latest: true
 
-            - name: Get yarn cache directory path 🛠
+            - name: 获取yarn缓存文件 🛠
               id: yarn-cache-dir-path
               run: echo "::set-output name=dir::$(yarn cache dir)"
 
-            - name: Cache node_modules 📦
+            - name: 缓存node_modules 📦
               uses: actions/cache@v2.1.4
               id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
               with:
@@ -42,8 +42,8 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-yarn-
 
-            - name: Install dependencies 👨🏻‍💻
+            - name: 安装依赖 👨🏻‍💻
               run: yarn
 
-            - name: Run linter 👀
-              run: yarn lint
+            - name: 不要让你的眼睛瞎了 👀
+              run: yarn saveMyEyes
