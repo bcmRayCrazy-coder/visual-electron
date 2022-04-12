@@ -10,7 +10,6 @@
 <script>
 import Blockly from "blockly";
 
-    
 export default {
   name: "BlocklyEditor",
   mounted() {

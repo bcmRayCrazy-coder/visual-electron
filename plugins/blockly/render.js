@@ -146,7 +146,7 @@ class CustomRenderer extends Blockly.blockRendering.Renderer {
 }
 
 try {
-    Blockly.blockRendering.register('custom_renderer', CustomRenderer);
+    Blockly.blockRendering.register('c_render', CustomRenderer);
 } catch (e) {
 
 }
