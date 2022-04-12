@@ -1,4 +1,7 @@
 import { XMLBuilder } from 'fast-xml-parser';
+import addonXml from './CustomBlocks/customBlocks.js';
+
+console.log(addonXml);
 
 const builder = new XMLBuilder({
     attributeNamePrefix: '@',
@@ -6,7 +9,7 @@ const builder = new XMLBuilder({
     arrayNodeName: 'category',
 });
 const toolbarXML = builder.build({
-    '@name': '列表',
+    // '@name': '列表',
     'category': [{
         '@name': '基本',
         'block': [{
@@ -32,8 +35,6 @@ const toolbarXML = builder.build({
 
 });
 
-console.log(toolbarXML);
-
 export default `<xml><category name="逻辑" colour="#68CDFF">
 <block type="controls_if"></block>
 <block type="controls_if">
@@ -51,8 +52,6 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
 </block>
 <block type="logic_null"></block>
 <block type="logic_ternary"></block>
-<block type="random_execute"></block>
-<block type="try_catch"></block>
 <block type="controls_repeat_ext">
   <value name="TIMES">
     <shadow type="math_number">
@@ -87,7 +86,6 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
 <block type="controls_flow_statements">
   <field name="FLOW">BREAK</field>
 </block>
-<block type="sleep"></block>
 </category>
 <category name="运算" colour="#A073FF">
 <block type="math_number">
@@ -337,6 +335,7 @@ export default `<xml><category name="逻辑" colour="#68CDFF">
 </category>
 <category name="变量" custom="VARIABLE" colour="#E04852"></category>
 <category name="函数" colour="#5574F8" custom="PROCEDURE"></category>
-
+<sep></sep>
+${addonXml}
 </xml>`;
 // ${toolbarXML}

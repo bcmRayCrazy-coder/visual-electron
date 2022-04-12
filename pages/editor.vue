@@ -1,11 +1,10 @@
 <template>
     <div>
-        <div ref="blocklyWarp"/>
-        <!-- <LoadingDialog></LoadingDialog> -->
+        <div ref="blocklyWarp" class="blocklyEditorWrapper"/>
+        <LoadingDialog></LoadingDialog>
     </div>
 </template>
 <script>
-import BlocklyEditor from '~/components/BlocklyEditor.vue'
 import LoadingDialog from '~/components/LoadingDialog.vue'
 import toolbarXML from '~/plugins/blockly/toolbar.js'
 
@@ -14,12 +13,13 @@ import Blockly from 'blockly'
 export default {
     name:"editor",
     components:{
-        BlocklyEditor,
         LoadingDialog
     },
     methods:{
         onLoad(){
             this.blockly = Blockly.inject(this.$refs.blocklyWarp, {
+                renderer:'c_render',
+                theme:'electron_theme',
                 toolbox:toolbarXML,
                 trashcan: true,
                 scrollbars: true,
@@ -41,6 +41,8 @@ export default {
                     snap: true
                 },
             })
+            this.blockly.addChangeListener(this.onChange);
+            this.blockly.addChangeListener(this.onWorkspaceChange);
         },
         onSave(){
             this.blockly.setVisible(false)
@@ -49,6 +51,14 @@ export default {
         },
         onChange(){
             this.blockly.setVisible(true)
+        },
+        onWorkspaceChange(){
+            console.log("workspace change");
+            console.log(this.getCode());
+        },
+
+        getCode(){
+            return Blockly.JavaScript.workspaceToCode(Blockly.getMainWorkspace()) || '// 空';
         }
     },
     data(){
@@ -61,3 +71,12 @@ export default {
     }
 }
 </script>
+<style lang="sass" scoped>
+.blocklyEditorWrapper
+    width:100%
+    height:100%
+    position: absolute
+    top:0
+    left:0
+    z-index: 50
+</style>

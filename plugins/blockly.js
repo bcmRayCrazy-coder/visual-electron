@@ -1,6 +1,7 @@
 import setCustomDialog from './blockly/dialog.js';
 import setMsg from './blockly/msg.js';
 import './blockly/render.js'
+import './blockly/theme.js'
 
 // Blockly.Blocks['blockly_plus_minus'] = {
 //     init: function() {
