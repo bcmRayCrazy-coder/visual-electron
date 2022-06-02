@@ -17,7 +17,7 @@
         "@blockly/block-plus-minus": "^3.0.10",
         "@nuxtjs/axios": "^5.13.6",
         "blockly": "^8.0.0",
-        "core-js": "^3.19.3",
+        "core-js": "^3.22.8",
         "fast-xml-parser": "^4.0.7",
         "nuxt": "^2.15.8",
         "vue": "^2.6.14",
