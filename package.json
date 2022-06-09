@@ -14,7 +14,7 @@
         "saveMyEyes": "yarn lintfix; yarn lint"
     },
     "dependencies": {
-        "@blockly/block-plus-minus": "^3.0.10",
+        "@blockly/block-plus-minus": "^3.0.15",
         "@nuxtjs/axios": "^5.13.6",
         "blockly": "^8.0.0",
         "core-js": "^3.19.3",
