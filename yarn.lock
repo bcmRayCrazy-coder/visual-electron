@@ -2047,10 +2047,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blockly@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.npmmirror.com/blockly/-/blockly-8.0.0.tgz#8b26273fe4c45c9a607cf615ee1d0e4056487c42"
-  integrity sha512-zdUfpke0wFWHLAbTNMpB46FPOtaqNwa6XWnLQduCe7TqL893HfKSRB+O0wInL/t/u6WEIYLnbyI2ZyyqK8f+lw==
+blockly@^8.0.5:
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/blockly/-/blockly-8.0.5.tgz#66e96911a82dd54b52b8ddf56b2f2f9b523ce065"
+  integrity sha512-jgr3PHImkFYSC2pNWZ74TmXP1HdajxeRd2DQaAt+9I+XLl9RCWvInqNHcS+blsKBTn6zOIxHK6nLzRATbLrDSw==
   dependencies:
     jsdom "15.2.1"
 
