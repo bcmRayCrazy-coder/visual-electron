@@ -925,10 +925,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@blockly/block-plus-minus@^3.0.10":
-  version "3.0.10"
-  resolved "https://registry.npmmirror.com/@blockly/block-plus-minus/-/block-plus-minus-3.0.10.tgz#b04c0747629f6a2366cd5d13cc24021ae173eacf"
-  integrity sha512-hQdXkfw7txIBluAovJWkRP3eA+Tkr0Fa09h188jglUVH0D+XXZYeGO3t5BbSqokLjLqLGifTevEaeGlKBpdirA==
+"@blockly/block-plus-minus@^3.0.22":
+  version "3.0.22"
+  resolved "https://registry.yarnpkg.com/@blockly/block-plus-minus/-/block-plus-minus-3.0.22.tgz#9e7ed295938ea20d4ec2e45a3e7a261058ce4a06"
+  integrity sha512-TFgBnL2ZmXQVNnr5HXtzrnQwZdZFVNgegujGEPDm9eIxkczUL5k2Pk7TERMv/WlbS9LWLzc/7V3o/QyGwQnJuA==
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
